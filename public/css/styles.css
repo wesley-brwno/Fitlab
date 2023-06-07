@@ -1,0 +1,138 @@
+:root {
+    --cor1: #3552f2;
+    --cor2: #049dd9;
+    --cor3: #0faebf;
+    --cor4: #14d9d9;
+    --cor5: #04d98b;
+}
+
+
+
+
+body {
+    min-width: 690px;
+}
+
+header {
+    background-color: var(--cor3);
+}
+
+.menu {
+    width: 70%;
+    margin: auto;
+}
+
+.menu h1{
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 10px 10px; 
+}
+
+nav{
+    text-align: right;
+}
+
+nav li {
+    display: inline-block; 
+    padding: 11px;
+}
+
+nav ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border: 3px double black;
+    padding: 10px;
+    transition: 1.9s all;
+}
+
+nav li :hover {
+    background-image: linear-gradient(to bottom right, cyan, white);
+    color: purple;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+
+/* corpo */
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+.image-slogan-container{
+
+}
+
+.image-slogan-container img{
+    width: 100%;
+    height: 250px;
+}
+
+/* mapa */
+
+.map-container {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+}
+
+/* planos */
+
+.planos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-content: center; /* Alinhar os cards no centro */
+}
+
+.plan-card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px; 
+    margin: auto;
+}
+
+.plan-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.plan-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-card li {
+    margin-bottom: 5px;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background-color: var(--cor3);
+    text-align: center;
+    display: flex;
+}
+
+footer section {
+    flex: 1;
+    margin-right: 10px; 
+}
