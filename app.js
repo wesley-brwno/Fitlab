@@ -15,6 +15,10 @@ app.get('/matricula.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'views', 'matricula.html'));
 });
 
+app.get('/matricula.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'form.html'));
+});
+
 
 app.post('/submit-matricula', (req, res) => {
     const nome = req.body.nome;
