@@ -15,22 +15,48 @@
             <nav>
               <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Planos</a></li>
+                <li><a href="#planos">Planos</a></li>
                 <li><a href="#qm-somos">Sobre</a></li>
               </ul>
             </nav>
         </div>
     </header>
 
-    <form action="/submit-matricula" method="POST">
 
-        <input type="text" name="nome" placeholder="Nome">
-        <input type="email" name="email" placeholder="E-mail">
-        <input type="number" name="telefone" placeholder="Telefone">
-        <button type="submit">Enviar</button>
-      </form>
+    <main class="main-form">
+        <div class="banner">
+            <img src="asserts/acedemia.jpg" alt="casal tirando foto em uma academia">
+        </div>
+        <form action="/submit-matricula" method="POST">
 
-      <footer>
+            <fieldset>
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" placeholder="Fulano S. Viera" id="nome" required>
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="fulano@email.com" id="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="number" name="telefone" placeholder="(XX) XXXXX-XXXX " id="telefone" required>
+            
+                <h2>Seu plano</h2>
+
+                <div class="planos">
+                    <input type="radio" name="plano" id="prata" value="prata" required> 
+                    <label for="prata">Prata</label>
+                    <input type="radio" name="plano" id="ouro" value="ouro" required>
+                    <label for="ouro">Ouro</label>
+                    <input type="radio" name="plano" id="platina" value="plantina" required>
+                    <label for="platina">Platina</label>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Enviar" id="submit-btn">          
+        </form>
+    </main>
+
+    <script src="js/form.js"></script>
+
+    <footer>
         <p>coypright</p>
         <div class="rodape">
             <section class="qm-somos" id="qm-somos">

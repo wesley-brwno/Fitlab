@@ -20,14 +20,23 @@ app.post('/submit-matricula', (req, res) => {
     const nome = req.body.nome;
     const email = req.body.email;
     const telefone = req.body.telefone;
+    const plano = req.body.plano;
 
   /*
   Para recuperar os valores de um formulário enviado com o método POST, deve usar req.body. 
   No entanto, para que o req.body funcione corretamente, é preciso adicionar o middleware express.urlencoded ao código do servidor.
   */
   
-    // Crie uma string com os dados a serem salvos no arquivo
-    const dados = `Nome: ${nome}, E-mail: ${email}, Telefone: ${telefone}\n`;
+    // Cria uma string com os dados a serem salvos no arquivo
+    const dados = `
+    --------------------------------------------
+     Nome: ${nome}
+     E-mail: ${email} 
+     Telefone: ${telefone}
+     Plano: ${plano}
+     -------------------------------------------
+     \n
+     `;
 
     // Caminho do arquivo onde os dados serão salvos
     const arquivo = path.join(__dirname, 'public', 'db', 'clientes.txt');
@@ -40,7 +49,14 @@ app.post('/submit-matricula', (req, res) => {
       }
   
       console.log('Dados salvos com sucesso');
-      res.send('Formulário de matrícula recebido e dados salvos com sucesso');
+      res.send(`
+      Formulário de matrícula recebido e dados salvos com sucesso
+      <br>
+      <p>${dados}</p>
+      <br>
+      
+      <a href='/'>Inicio</a>
+      `);
     });
   });
 
