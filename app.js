@@ -11,11 +11,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/matricula.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'views', 'matricula.html'));
-});
-
-app.get('/matricula.html', (req, res) => {
+app.get('/form.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'form.html'));
 });
 

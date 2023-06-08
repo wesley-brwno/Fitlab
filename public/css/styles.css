@@ -4,6 +4,7 @@
     --cor3: #0faebf;
     --cor4: #14d9d9;
     --cor5: #04d98b;
+    --fundo: #FFFFFF;
 }
 
 
@@ -11,25 +12,35 @@
 
 body {
     min-width: 690px;
+    background-color: var(--fundo);
 }
 
 header {
-    background-color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor4)30%, var(--cor3));
 }
 
 .menu {
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
-.menu h1{
+.menu h1 {
     display: inline-block;
     text-transform: uppercase;
     margin: 10px 10px; 
 }
 
+.menu img {
+    width: 250px;
+    height: 100px;
+    margin-bottom: -57px;
+    padding: 10px;
+}
+
 nav{
     text-align: right;
+    width: 67%;
+    margin: auto;
 }
 
 nav li {
@@ -57,17 +68,19 @@ nav li :hover {
 /* corpo */
 
 main {
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
-.image-slogan-container{
-
+.image-slogan-container h1 {
+    text-align: center;
 }
 
-.image-slogan-container img{
-    width: 100%;
-    height: 250px;
+.image-slogan-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;    
 }
 
 /* mapa */
@@ -79,7 +92,7 @@ main {
 }
 
 .map-container iframe {
-    width: 100%;
+    width: 67%;
     height: 200px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
 }
@@ -93,8 +106,10 @@ main {
 
 .plans-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
+    width: 67%;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
     justify-content: center; /* Alinhar os cards no centro */
 }
 
@@ -104,7 +119,7 @@ main {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin-bottom: 20px;
-    width: 200px; 
+    width: 170px; 
     margin: auto;
 }
 
@@ -129,10 +144,25 @@ footer {
     width: 100%;
     background-color: var(--cor3);
     text-align: center;
-    display: flex;
 }
 
-footer section {
-    flex: 1;
-    margin-right: 10px; 
+footer .rodape {
+    display: flex;
+    flex-wrap: wrap; /* Adicionamos flex-wrap para que as sections quebrem a linha quando necessário */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: flex-start; /* Alinha os elementos no topo verticalmente */
 }
+
+footer p {
+    display: inline-block;
+    width: 100%; /* Ocupa todo o espaço disponível horizontalmente */
+    margin-bottom: 10px; /* Adiciona espaço entre o <p> e as sections */
+}
+
+.rodape section {
+    flex: 1;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
