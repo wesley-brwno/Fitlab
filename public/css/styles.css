@@ -20,6 +20,7 @@ body {
 
 header {
     background-image: linear-gradient(to right, var(--cor4)30%, var(--cor3));
+    border: 1px solid --cor4;
 }
 
 .menu {
@@ -103,13 +104,11 @@ main {
 /* planos */
 
 .planos {
-    text-align: center;
-    margin-bottom: 20px;
     width: 67%;
-    margin: auto;
-    margin-bottom: 20px;
+    padding: 0 0 10px 0;
+    text-align: center;
+    margin: 20px auto;
     background-color: #f1f1f1;
-    padding-bottom: 10px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.397), -2px -2px 10px rgba(0, 0, 0, 0.397);
 }
@@ -124,7 +123,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
-    justify-content: center; /* Alinhar os cards no centro */
+    justify-content: center; /* Alinha os cards no centro */
 }
 
 .plan-card {
@@ -180,8 +179,8 @@ footer .rodape {
 
 footer p {
     display: inline-block;
-    width: 100%; /* Ocupa todo o espaço disponível horizontalmente */
-    margin-bottom: 10px; /* Adiciona espaço entre o <p> e as sections */
+    width: 100%; 
+    margin-bottom: 10px; 
 }
 
 .rodape section {
@@ -196,6 +195,7 @@ footer p {
 .main-form {
     width: 50%;
     margin: auto;
+    text-align: center;
 }
 
 .banner  img{
@@ -216,7 +216,7 @@ fieldset {
     text-align: center;
 }
 
-.planos {
+.main-form .planos {
     width: 90%;
     padding: 10px;
 }
