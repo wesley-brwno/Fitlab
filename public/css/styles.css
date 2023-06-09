@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
 :root {
     --cor1: #3552f2;
     --cor2: #049dd9;
@@ -8,15 +11,18 @@
     --prata:#C0C0C0;
     --ouro: #FFD700; 
     --platina: #A9A9A9;
+    --fontes:#31708B;
 }
-
 
 
 
 body {
     min-width: 690px;
     background-color: var(--fundo);
+    font-family: 'Raleway', sans-serif;
+    color: var(--fontes);
 }
+
 
 header {
     background-image: linear-gradient(to right, var(--cor4)30%, var(--cor3));
@@ -64,7 +70,6 @@ nav ul a {
 nav li :hover {
     background-image: linear-gradient(to bottom right, cyan, white);
     color: purple;
-    border-radius: 20px;
     border: 3px solid black;
 }
 
@@ -128,8 +133,8 @@ main {
 
 .plan-card {
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.521), -1px -1px 3px rgba(0, 0, 0, 0.541);
+    padding: 5px 10px;
     margin-bottom: 20px;
     width: 170px; 
     margin: auto;
@@ -138,6 +143,8 @@ main {
 .plan-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .plan-card ul {
@@ -148,6 +155,29 @@ main {
 
 .plan-card li {
     margin-bottom: 5px;
+    transition: all 1s;
+}
+
+.plan-card:hover li:not(.nao-incluso) {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.plan-card a {
+    background-color: var(--cor5);
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.315);
+    text-decoration: none;
+    font-weight: bold;
+    bottom: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+}
+
+.plan-card .nao-incluso {
+    text-decoration: line-through;
 }
 
 .prata {
@@ -166,8 +196,20 @@ main {
 
 footer {
     width: 100%;
-    background-color: var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor4)12%, var(--cor3));
     text-align: center;
+    color: black;
+}
+
+footer img {
+    width: 70px;
+    padding-top: 4px;
+}
+
+footer hr {
+    margin: 0;
+    width: 80%;
+    margin: auto;
 }
 
 footer .rodape {
@@ -187,6 +229,12 @@ footer p {
     flex: 1;
     margin-right: 10px;
     text-align: center;
+}
+
+
+
+.rodape ul li {
+    list-style: none;
 }
 
 
