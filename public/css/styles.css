@@ -10,7 +10,7 @@
     --fundo: #FFFFFF;
     --prata:#C0C0C0;
     --ouro: #FFD700; 
-    --platina: #A9A9A9;
+    --platina: #ececec;
     --fontes:#31708B;
 }
 
@@ -104,6 +104,7 @@ main {
     width: 67%;
     height: 200px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    border-radius: 20px;
 }
 
 /* planos */
@@ -231,12 +232,43 @@ footer p {
     text-align: center;
 }
 
+.qm-somos p {
+    padding: 0px 20px;
+    margin-top: 0;
+}
 
 
 .rodape ul li {
     list-style: none;
+    padding: 2px;
 }
 
+.newsletter {
+    width: 100%;
+}
+
+.newsletter label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.newsletter input {
+    width: 60%;
+}
+
+.newsletter button {
+    width: 30%;    
+    border-radius: 0;
+    background-color: var(--cor5);
+    margin: 15px auto;
+}
+
+.creators a {
+    text-decoration: none;
+    color: black;
+}
 
 /* estilos de form.html */
 
@@ -278,4 +310,40 @@ fieldset {
     border-radius: 0;
     background-color: var(--cor5);
     margin: 15px auto;
+}
+
+
+/* Estilos de clientes html */
+
+.main-clientes {
+    height: fit-content;
+    width: 90%;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.521), -1px -1px 3px rgba(0, 0, 0, 0.541);   
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
 }

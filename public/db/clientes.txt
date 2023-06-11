@@ -1,19 +1,28 @@
 
-    --------------------------------------------
-     Nome: Wesley Bruno Silva das Virgens
-     E-mail: brunow9@outlook.com 
-     Telefone: 61999258165
-     Plano: plantina
-     -------------------------------------------
-     
+  --------------------------------------------
+  Nome: Roger Guedes
+  E-mail: rg@email.com 
+  Telefone: 456123
+  Plano: plantina
+  -------------------------------------------
 
-     
-    --------------------------------------------
-     Nome: Li Dina
-     E-mail: brunow9@outlook.com 
-     Telefone: 61999258165
-     Plano: plantina
-     -------------------------------------------
-     
+  --------------------------------------------
+  Nome: Nyemar
+  E-mail: mm@email.com 
+  Telefone: 8989764541
+  Plano: prata
+  -------------------------------------------
 
-     
+  --------------------------------------------
+  Nome: Komi shouko
+  E-mail: komi@email.com 
+  Telefone: 638527419
+  Plano: ouro
+  -------------------------------------------
+
+  --------------------------------------------
+  Nome: Pele nascimetno
+  E-mail: pele@email.com 
+  Telefone: 7879654651
+  Plano: plantina
+  -------------------------------------------
