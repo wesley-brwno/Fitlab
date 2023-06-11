@@ -5,10 +5,6 @@ const matriculaBtn = document.getElementById('matricula-btn')
 
 /* Opções de planos em form.js */
 
-
-
-
-
 prataBtn.addEventListener('click', ()=> {
     escolhaDePlano("prata");
 });
@@ -35,6 +31,6 @@ function escolhaDePlano(plano) {
     } else if(plano === "platina"){
         localStorage.setItem('planoSelecionado', 'platina');
     } else {
-        localStorage.setItem('planoSelecionado', 'nao-aplica');
+        localStorage.removeItem('planoSelecionado');
     }
 }

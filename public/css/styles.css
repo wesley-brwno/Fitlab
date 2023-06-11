@@ -14,15 +14,12 @@
     --fontes:#31708B;
 }
 
-
-
 body {
     min-width: 690px;
     background-color: var(--fundo);
     font-family: 'Raleway', sans-serif;
     color: var(--fontes);
 }
-
 
 header {
     background-image: linear-gradient(to right, var(--cor4)30%, var(--cor3));
@@ -72,7 +69,6 @@ nav li :hover {
     color: purple;
     border: 3px solid black;
 }
-
 
 /* corpo */
 
@@ -259,7 +255,7 @@ footer p {
 }
 
 .newsletter button {
-    width: 30%;    
+    width: 110px;    
     border-radius: 0;
     background-color: var(--cor5);
     margin: 15px auto;
@@ -318,6 +314,7 @@ fieldset {
 .main-clientes {
     height: fit-content;
     width: 90%;
+    text-align: center;
 }
 
 
@@ -346,4 +343,20 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
     background-color: #ffffff;
+}
+
+tr:last-child {
+    background-color: #04d98b75;
+}
+
+.baixarBtn {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356), -2px -2px 3px rgba(0, 0, 0, 0.212);
+    background-color: var(--cor5);
+    margin: 15px auto;
 }

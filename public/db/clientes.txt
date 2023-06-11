@@ -1,28 +1,40 @@
 
-  --------------------------------------------
-  Nome: Roger Guedes
-  E-mail: rg@email.com 
-  Telefone: 456123
-  Plano: plantina
-  -------------------------------------------
+      --------------------------------------------
+      Nome: Komi Shouko
+      E-mail: komi@email.com 
+      Telefone: 1111111111
+      Plano: prata
+      Data de incrição: 11/6/2023
+      -------------------------------------------
 
-  --------------------------------------------
-  Nome: Nyemar
-  E-mail: mm@email.com 
-  Telefone: 8989764541
-  Plano: prata
-  -------------------------------------------
+      --------------------------------------------
+      Nome: Tanjiro Kamado
+      E-mail: tanjiro@emai.com 
+      Telefone: 222222222
+      Plano: ouro
+      Data de incrição: 11/6/2023
+      -------------------------------------------
 
-  --------------------------------------------
-  Nome: Komi shouko
-  E-mail: komi@email.com 
-  Telefone: 638527419
-  Plano: ouro
-  -------------------------------------------
+      --------------------------------------------
+      Nome: Nezuko Kamado
+      E-mail: nezuko@email.com 
+      Telefone: 3333333333
+      Plano: plantina
+      Data de incrição: 11/6/2023
+      -------------------------------------------
 
-  --------------------------------------------
-  Nome: Pele nascimetno
-  E-mail: pele@email.com 
-  Telefone: 7879654651
-  Plano: plantina
-  -------------------------------------------
+      --------------------------------------------
+      Nome: Mitsuri Kanroji
+      E-mail: mk@email.com 
+      Telefone: 444444444
+      Plano: plantina
+      Data de incrição: 11/6/2023
+      -------------------------------------------
+
+      --------------------------------------------
+      Nome: Muichiro Tokito
+      E-mail: tokito@email.com 
+      Telefone: 55555555
+      Plano: ouro
+      Data de incrição: 11/6/2023
+      -------------------------------------------
