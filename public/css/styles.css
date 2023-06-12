@@ -271,7 +271,8 @@ footer p {
 }
 
 .newsletter input {
-    width: 60%;
+    width: 30%;
+    
 }
 
 .newsletter button {
@@ -407,4 +408,10 @@ tr:last-child {
     background-color: rgb(95, 218, 95);
     font-weight: 900;
     transition: 500ms ease-in-out;
+}
+.footer_clientes{
+    height: 35vh;
+}
+#btdwCliente{
+    padding-bottom: 15rem;
 }
