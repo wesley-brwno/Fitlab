@@ -114,8 +114,10 @@ function geraPaginaParaExibirClientes() {
   </head>
   <body>
       <header>
-          <div class="menu">
+          <div id="logo">
               <img src="asserts/svg/logo-no-background.svg" alt="logo da fitlab">
+          </div>
+          <div id="menu" class="menu">
               <nav>
                 <ul>
                   <li><a href="index.html">Inicio</a></li>
