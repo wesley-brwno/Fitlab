@@ -10,8 +10,10 @@
 </head>
 <body>
     <header>
-        <div class="menu">
+        <div id="logo">
             <img src="asserts/svg/logo-no-background.svg" alt="logo da fitlab">
+        </div>
+        <div id="menu" class="menu">
             <nav>
               <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -30,14 +32,16 @@
         <h2>Bem vindo à fitlab</h2>
         <form action="/submit-matricula" method="POST">
 
-            <fieldset>
                 <label for="nome">Nome completo</label>
                 <input type="text" name="nome" placeholder="Fulano S. Viera" id="nome" required>
                 <br>
                 <label for="email">E-mail</label>
+                <br>
                 <input type="email" name="email" placeholder="fulano@email.com" id="email" required>
+                <br>
                 <label for="telefone">Telefone</label>
-                <input type="number" name="telefone" placeholder="(XX) XXXXX-XXXX " id="telefone" required>
+                <br>
+                <input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX " id="telefone" required>
             
                 <h2>Seu plano</h2>
 
@@ -49,8 +53,6 @@
                     <input type="radio" name="plano" id="platina" value="plantina" required>
                     <label for="platina">Platina</label>
                 </div>
-            </fieldset>
-
             <input type="submit" value="Enviar" id="submit-btn">          
         </form>
     </main>
